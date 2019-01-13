@@ -1,0 +1,660 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Universal Styles */
+
+html {
+  font-size: 16px;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.main-content {
+  position:relative;
+  top: 4rem;
+  bottom: 6rem;
+  
+}
+
+body {
+  max-width: 81.25rem;
+}
+
+
+  .tag {
+    text-transform: uppercase;
+	
+
+}
+  .items {
+    text-transform: capitalize;
+  }
+
+/*Universal - Mobile*/
+
+@media only screen and (max-width : 736px ){
+    header .logo img,p {
+        display: none;
+}
+
+    h2 {
+      font-size: 1.5rem;
+  }
+
+
+header .desktop ul li {
+  display: none
+}
+header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .content {
+    padding: .5rem 0;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .mobile li {
+    padding: 0;
+  }
+
+}
+
+/* Header */
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: white;
+}
+
+header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  border-bottom: solid 1px #c6c1c1;
+  background-color: white;
+}
+
+header .logo {
+    display: inline-flex;
+    align-items: center;
+    flex-grow: 1;
+    padding-left: 1.5rem;
+    font-weight: 500;
+}
+
+.logo span {
+  font-weight: 700;
+}
+
+
+
+header ul li {
+    display: inline;
+    padding: 0 1rem;
+    align-items: flex-end;
+    
+}
+
+header ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color:inherit;
+}
+@media only screen and (min-width : 736px ){
+  header .mobile ul li {
+        display: none;
+    }
+}
+/* Start Here */
+
+#start-here-section {
+  display:flex;
+  width: 100%;
+  background-color: #C7C7C7;
+}
+
+#start-here-section .image  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+#start-here-section .image img {
+    width: 100%;
+    height: auto;
+}
+
+#start-here-section .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  margin: 2rem 0.75rem;
+  }
+
+  .button {
+    background-color: #666666;
+    border: none;
+    border-radius: .4rem;
+    color: white;
+
+    text-align: center;
+   
+    cursor: alias;
+    transition: all 300ms ease 250ms;
+}
+    .button span {
+      font-family: inherit;
+      font-weight: bold;
+	  font-size: 1.5rem;
+      padding: .5rem auto;
+      color: #2E2E2E;
+    }
+
+
+.button:hover {
+    background-color: #262626;
+}
+#start-here-section h1 {
+      font-size: 3.5rem;
+      font-weight: 900;
+      margin-bottom: 2rem;
+      padding-top: 2rem 0;
+  }
+
+
+#start-here-section h2 {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+      padding-top: 2rem 0;
+  }
+
+/*Start Here - Mobile*/
+
+@media only screen and (max-width : 736px ){
+    #start-here-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 1rem;
+    }
+
+    #start-here-section .image {
+      width: 100%;
+    }
+
+    #start-here-section .text {
+      width: 100%;
+      text-align: center;
+
+    }
+    #start-here-section .text h1 {
+    padding: 2rem auto;
+  }
+   button {
+     margin-top: 1.5rem;
+     margin-bottom: 2rem;
+   }
+  }
+
+/*Information*/
+
+#information {
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#information .main {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+#information .main img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+#information .main h1 {
+    font-family: 'Roboto', sans-serif;
+	font-size: 2.2rem;
+	font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+ 
+#information p {
+	font-family: 'Roboto Slab', serif;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+#information .author {
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  margin-top: 2rem;
+}
+
+#information .articles {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #C5CAD7;
+  padding: 1rem 0 2rem 1rem;
+  width: 40%;
+  height: auto;
+}
+
+
+#information .articles article:last-child {
+    background-color: #C7C7C7;
+}
+
+#information .articles article:first-child {
+    border-bottom: double;
+}
+
+#information .articles article .desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+
+}
+
+ article .desktop img {
+  width: 35%;
+  height: auto;
+  margin: 1rem;
+}
+
+
+article .desktop .text
+{
+  width: 65%;
+  align-self: center;
+  text-align: 0.5rem;
+  flex: 1 1 auto;
+}
+
+
+
+article .text  {
+  margin-bottom: 1.25rem;
+}
+
+article .text h2 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 1.5rem;
+}
+
+article .text p {
+	margin-bottom: 1rem;
+}
+
+article .text a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+ article .mobile  {
+  display: none;
+}
+
+
+/*Information - Mobile*/
+
+@media only screen and (max-width : 736px ){
+    #information {
+      justify-content: center;
+	  align-items: center;
+	  
+    }
+
+    #information .main {
+      display: none;
+    }
+
+    #information .articles {
+      width: 100%;
+	  margin: 1rem;
+    }
+
+    #information .articles article {
+        display: flex;
+        flex-direction: column;
+        bottom: 1rem;
+    }
+
+    #information article .mobile {
+      display: block;
+      padding: 1rem;
+    }
+    
+	#information article .mobile .text p{
+		display: block;
+	}
+	
+	
+	
+	#information .articles article .mobile:last-child {
+		background-color: #FFFFFF;
+	}
+	
+	
+	#information .articles article:first-child {
+    border-bottom: none;
+    }
+	
+	
+    #information article .desktop img{
+      display: none;
+    }
+	
+	#information article .desktop .text {
+		display: none;
+	}
+	 
+
+    #information #lecture {
+      background-color: white;
+    }
+
+    .text {
+      width: 90%;
+      padding: 1rem 1rem 1rem 2rem;
+    }
+}
+
+/* Courses */
+#courses-section {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: #C7C7C7;
+}
+
+#courses-section h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 3.5rem;
+}
+
+.course {
+    width: 30%;
+    background-color: white;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.course img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.course >.text {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 4rem 1.5rem 1rem;
+}
+
+.course >.text h2 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.3rem;
+	font-weight: 600;
+	
+}
+
+.course >.text p {
+	font-family: 'Roboto Slab', serif;
+	line-height: 1.3rem;
+}
+
+.course >.text h3 {
+	font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #687083;
+    padding: 0.5rem 0;
+}
+
+  .courses-mobile {
+    display: none;
+}
+
+/*Courses - Mobile*/
+
+@media only screen and (max-width : 736px ){
+
+    #courses-section {
+      background-color: white;
+      border: 2px solid lightgray;
+    }
+
+    .courses {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #courses-section img, #courses-section h3, #courses-section p {
+      display: none;
+    }
+
+    .course {
+      width: 90%;
+      background-color: lightgray;
+      padding: 0;
+      margin: 0.5rem 0;
+  }
+
+    .course >.text h2 {
+      padding: 1rem 0 1.5rem 1rem;
+    }
+
+}
+
+/*Thesis*/
+
+#thesis-exhibit{
+	display: flex;
+    flex-direction: column;
+    position: relative;
+	bottom: 3rem;
+}
+#thesis-exhibit h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-top: .7rem;
+  padding: 3rem 0;
+}
+
+
+.theses {
+    display: flex;
+    padding-bottom: 2rem;
+	
+}
+
+.theses >.first-part {
+    width: 60%;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+		
+}
+
+.theses >.first-part h2{
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.theses >.first-part p {
+	font-family: 'Roboto Slab', serif;
+	line-height: 1.2rem;
+}
+
+video {
+    margin-bottom: 1.5rem;
+    border: 2px solid #C5CAD7;
+    width: 100%;
+}
+
+.theses >.seconde-part {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+		
+}
+
+.theses >.seconde-part article {
+    display: flex;
+    align-items: center;
+  }
+
+.theses >.seconde-part .thesis img {
+    max-width: 35%;
+    height: auto;
+    padding: 1rem;
+}
+
+.theses >.seconde-part article:first-child {
+    background-color: lightgray;
+}
+
+.seconde-part h2 {
+	margin-top: 1rem;
+}
+
+.seconde-part p {
+	
+	font-family: 'Roboto Slab', serif;
+	line-height: 1.3rem;
+    margin-top: 0.5rem;
+}
+
+
+/*Thesis - Mobile*/
+
+@media only screen and (max-width : 736px ){
+    #thesis-exhibit .seconde-part, #thesis-exhibit h2, #thesis-exhibit p {
+      display: none;
+    }
+
+    video {
+     width: 100%;
+     margin: 0 auto;
+     color: lightgray;
+    }
+
+    .theses > .first-part {
+      width: 100%;
+    }
+}
+
+/*Footer*/
+
+footer {
+	display: flex;
+	z-index: 1;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 4rem;
+	width: 100%;
+	padding: 0.01em 0.5rem;
+	line-height: 1.5;
+    background-color: #C7C7C7 ;
+}
+
+.flex {
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+footer .copyright {
+   
+  margin-left: 1.5rem;
+}
+
+footer .terms {
+  
+  margin-right: 1.5rem;
+}
+
+footer .terms a {
+  text-decoration: none;
+  color: #687083 !important;
+}
+
+footer .terms a:first-child {
+  padding-right: 1.5rem;
+}
+
+/*Footer Mobile*/
+
+@media only screen and (max-width: 736px){
+  .flex .terms {
+      display: none;
+  }
+
+  footer {
+      border: none;
+	  height: auto;
+	  
+  }
+	footer .flex {
+		 justify-content: flex-start;
+		 
+	}
+
+     .flex > .copyright{
+	  margin-top: 1.5rem;
+      padding-top: 1rem;
+	  padding-bottom: 1rem;
+      font-size: 1.1rem;
+      color: #383838;
+  }
+}
